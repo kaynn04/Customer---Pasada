@@ -154,13 +154,13 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"/>
 
+        <!-- Last Name -->
         <EditText
             android:id="@+id/middleName"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:hint="Enter your middle name (optional)"/>
+            android:hint="Enter your middle name (optional)" />
 
-        <!-- Last Name -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -256,7 +256,7 @@
         <Button
             android:id="@+id/loginButton"
             android:layout_width="292dp"
-            android:layout_height="60dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button_background"

@@ -2,4 +2,5 @@
     <string name="app_name">pasada_customer</string>
     <string name="enter_your_email_username">enter_your_email_username\n</string>
     <string name="register">Register</string>
+    <string name="floor_unit_edit_hint">floor_unit_edit_hint\n</string>
 </resources>

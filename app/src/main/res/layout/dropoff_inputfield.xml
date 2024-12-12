@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Red Square -->
+    <RelativeLayout
+        android:id="@+id/red_square"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#8C1C13">
+
+        <!-- Text: Hatid-Sundo -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hatid-Sundo"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/back_button_background"
+            android:contentDescription="Back Button"
+            android:src="@drawable/ic_back_arrow"
+            android:padding="12dp"
+            android:paddingStart="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/where_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/red_square"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Where to?" />
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-45dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="5dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_location">
+            </ImageView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/where_to"
+        android:layout_marginTop="17dp"
+        android:background="#D9D9D9" />
+
+    <RelativeLayout
+        android:id="@+id/current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/where_to">
+
+        <TextView
+            android:id="@+id/current_location_input"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="11dp"
+            android:padding="10dp" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="357dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="#000000"
+            tools:ignore="DuplicateIds"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:id="@+id/current_location_text"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="50dp"
+            android:text="Current Location"
+            android:textSize="13sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="51dp"
+            android:text="Tap here to turn on location"
+            android:layout_below="@id/current_location_text"
+            android:textSize="10sp"
+            android:textStyle="normal">
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_gps">
+            </ImageView>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saved_addresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/current_location"
+        tools:ignore="DuplicateIds">
+
+        <TextView
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="11dp"
+            android:padding="10dp" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="357dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="#000000"
+            tools:ignore="DuplicateIds"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:id="@+id/saved_addresses_text"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="50dp"
+            android:text="Saved Addresses"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_saved_addresses">
+            </ImageView>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

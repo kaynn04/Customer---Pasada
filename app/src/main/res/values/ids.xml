@@ -2,4 +2,6 @@
 <resources>
     <item name="country_code" type="id" />
     <item name="loginButton" type="id" />
+    <item name="pickup_location_title" type="id">pickup_location_title</item>
+    <item name="dropoff_location_title" type="id">dropoff_location_title</item>
 </resources>
