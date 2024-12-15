@@ -67,11 +67,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
             android:background="@drawable/button_background_blackborder"
+            android:drawableStart="@drawable/ic_place"
             android:importantForAccessibility="no">
         </EditText>
 

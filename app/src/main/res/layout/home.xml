@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="F5F5F5">
+    android:background="#F5F5F5">
 
     <RelativeLayout
         android:id="@+id/home_red"
         android:layout_width="match_parent"
         android:layout_height="154dp"
         android:background="@drawable/home_rectangle">
-        
-<!--        Burger Icon-->
+
+        <!--        Burger Icon-->
         <ImageButton
             android:id="@+id/burger_icon"
             android:layout_width="48dp"
@@ -22,7 +22,7 @@
             android:contentDescription="Menu"
             android:src="@drawable/ic_burger_menu"/>
 
-<!--        Home Text-->
+        <!--        Home Text-->
         <TextView
             android:id="@+id/home_text"
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
 
-<!--        Profile Picture-->
+        <!--        Profile Picture-->
         <ImageView
             android:id="@+id/profile_picture"
             android:layout_width="60dp"
@@ -43,11 +43,11 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_profile_placeholder"
+            android:src="@drawable/ic_profile_circle_placeholder"
             android:background="@drawable/circle_profile_placeholder"/>
     </RelativeLayout>
 
-<!--    Greeter Section-->
+    <!--    Greeter Section-->
     <RelativeLayout
         android:id="@+id/greeting_section"
         android:layout_width="314dp"
@@ -57,7 +57,7 @@
         android:background="@drawable/white_rectangle"
         android:elevation="10dp">
 
-<!--        Text: Hi, {Name of User}-->
+        <!--        Text: Hi, {Name of User}-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,8 +68,8 @@
             android:textStyle="normal"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp" />
-        
-<!--        Good Morning, Afternoon, Evening-->
+
+        <!--        Good Morning, Afternoon, Evening-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
                 android:textStyle="bold"/>
         </LinearLayout>
 
-<!--        Divider Line-->
+        <!--        Divider Line-->
         <View
             android:layout_width="2dp"
             android:layout_height="60dp"
@@ -178,7 +178,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/divider_line"
         android:orientation="vertical">
-        
+
         <TextView
             android:layout_width="200dp"
             android:layout_height="25dp"
@@ -196,14 +196,14 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="30dp"
             android:elevation="10dp">
-<!-- Red Section-->
+            <!-- Red Section-->
             <View
                 android:id="@+id/red_section"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:background="#8C1C13"/>
 
-<!--            Number Inside the Red Section-->
+            <!--            Number Inside the Red Section-->
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
@@ -214,7 +214,7 @@
                 android:layout_alignTop="@+id/red_section"
                 android:layout_alignBottom="@id/red_section"/>
 
-<!--            White Section-->
+            <!--            White Section-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -225,7 +225,7 @@
                 android:text="Fairview Terraces"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -266,7 +266,7 @@
                 android:text="Robinsons"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -307,7 +307,7 @@
                 android:text="Pamahay"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
     </LinearLayout>
