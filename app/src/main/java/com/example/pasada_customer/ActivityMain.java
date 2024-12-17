@@ -14,7 +14,7 @@ public class ActivityMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Make sure this points to your XML layout file
+        setContentView(R.layout.loading_main); // Make sure this points to your XML layout file
 
         progressBar = findViewById(R.id.progressBar);  // Initialize the ProgressBar
 

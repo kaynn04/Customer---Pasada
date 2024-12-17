@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Red Square -->
+        <RelativeLayout
+            android:id="@+id/red_square"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#8C1C13">
+
+            <!-- Text: Hatid-Sundo -->
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metric"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true" />
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/back_button_background"
+                android:contentDescription="Back Button"
+                android:src="@drawable/ic_back_arrow"
+                android:padding="8dp"
+                android:paddingStart="20dp" />
+        </RelativeLayout>
+
+    <!--    route one-->
+        <RelativeLayout
+            android:id="@+id/route_one"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#D9D9D9"
+            android:clickable="true"
+            android:focusable="true">
+
+    <!--        Text: Route 1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Route 1"
+                android:textSize="13sp"/>
+
+    <!--        Place-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Fairview Terraces - Bukluran"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+    <!--        Fare-->
+            <TextView
+                android:id="@+id/fare_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="P40"
+                android:textSize="17sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+    <!--        Meter-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/fare_price"
+                android:text="3 meters"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+
+        <!--    route one-->
+        <RelativeLayout
+            android:id="@+id/route_two"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:background="#D9D9D9"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!--        Text: Route 1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Route 2"
+                android:textSize="13sp"/>
+
+            <!--        Place-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Pamahay - Bukluran"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <!--        Fare-->
+            <TextView
+                android:id="@+id/fare_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="P35"
+                android:textSize="17sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                tools:ignore="DuplicateIds" />
+
+            <!--        Meter-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/fare_price"
+                android:text="2 meters"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

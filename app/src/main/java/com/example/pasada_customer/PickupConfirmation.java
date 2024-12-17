@@ -14,7 +14,7 @@ public class PickupConfirmation extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.loading_main);
 
         mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         GoogleMap map = mapFragment.getMap();

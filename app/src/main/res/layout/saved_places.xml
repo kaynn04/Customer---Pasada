@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Red Square -->
+    <RelativeLayout
+        android:id="@+id/red_square"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#8C1C13">
+
+        <!-- Text: Hatid-Sundo -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Places"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/back_button_background"
+            android:contentDescription="Back Button"
+            android:src="@drawable/ic_back_arrow"
+            android:padding="8dp"
+            android:paddingStart="20dp" />
+    </RelativeLayout>
+
+<!--    Add Home-->
+    <RelativeLayout
+        android:id="@+id/add_home"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:background="#D9D9D9"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_black_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/home_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Add Home"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+<!--    Add Work-->
+    <RelativeLayout
+        android:id="@+id/add_work"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:background="#D9D9D9"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/work_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_black_work" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/work_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Add Work"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <!--    Add School-->
+    <RelativeLayout
+        android:id="@+id/add_school"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:background="#D9D9D9"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/school_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_school" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/school_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Add School"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Saved Places"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <!--    Add School-->
+    <RelativeLayout
+        android:id="@+id/add_another_place"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="#D9D9D9"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_add_place"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/add_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Add Another Place"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

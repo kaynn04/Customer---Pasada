@@ -260,12 +260,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter note for driver"
             android:layout_below="@id/notes_text"
             android:layout_marginStart="10dp"
-            android:textSize="15dp"
+            android:text="Enter note for driver"
             android:textColor="#000000"
-            android:textStyle="normal"/>
+            android:textSize="15dp"
+            android:textStyle="normal"
+            tools:ignore="TextSizeCheck" />
     </RelativeLayout>
 
     <!--    Divider for Notes-->

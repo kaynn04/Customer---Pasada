@@ -63,7 +63,8 @@
         android:background="@drawable/input_field_background"
         android:padding="12dp"
         android:layout_marginStart="65dp"
-        android:layout_marginEnd="60dp"/>
+        android:layout_marginEnd="60dp"
+        android:hint="Enter Pick-up Location"/>
 
     <TextView
         android:id="@id/dropoff_location_title"
@@ -86,7 +87,8 @@
         android:background="@drawable/input_field_background"
         android:padding="12dp"
         android:layout_marginStart="65dp"
-        android:layout_marginEnd="60dp"/>
+        android:layout_marginEnd="60dp"
+        android:hint="Enter Drop-off Location"/>
 
     <!--    Divider Line   -->
 
@@ -147,7 +149,7 @@
             android:layout_height="30dp"
             android:layout_toEndOf="@id/how_many_passenger_text"
             android:layout_marginTop="3dp"
-            android:layout_marginStart="170"
+            android:layout_marginStart="170dp"
             android:text=">"
             android:textSize="20sp"
             android:textStyle="bold"
