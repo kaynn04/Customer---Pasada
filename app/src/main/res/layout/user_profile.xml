@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
 
     <!-- Red Square -->
     <RelativeLayout
@@ -32,7 +33,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="18dp"
             android:layout_marginStart="16dp"
-            android:background="@drawable/back_button_background"
+            android:background="@drawable/button_back_background"
             android:contentDescription="Back Button"
             android:src="@drawable/ic_back_arrow"
             android:padding="8dp"
@@ -50,9 +51,9 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_profile_circle_placeholder"
             android:background="@drawable/circle_profile_placeholder"
             android:layout_centerHorizontal="true"/>
+<!--        android:src="@drawable/ic_profile_circle_placeholder"/>-->
     </RelativeLayout>
 
     <RelativeLayout

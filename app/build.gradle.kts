@@ -39,6 +39,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.ccp.v271) // country code picker
     testImplementation(libs.junit)
+    implementation(libs.material) // for sidebar
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
