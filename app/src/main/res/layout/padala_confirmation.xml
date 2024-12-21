@@ -36,7 +36,7 @@
             android:contentDescription="Back Button"
             android:src="@drawable/ic_back_arrow"
             android:padding="8dp"
-            android:paddingStart="20dp" />
+            android:paddingStart="20dp"/>
     </RelativeLayout>
 
     <!--    Header for picture, name, fare price-->
@@ -289,7 +289,8 @@
         android:text="Confirm Booking"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
 
 
 

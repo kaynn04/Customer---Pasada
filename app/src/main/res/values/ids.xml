@@ -2,9 +2,9 @@
 <resources>
     <item name="country_code" type="id" />
     <item name="loginButton" type="id" />
-    <item name="pickup_location_title" type="id">pickup_location_title</item>
-    <item name="dropoff_location_title" type="id">dropoff_location_title</item>
-    <item name="profile" type="id">profile</item>
-    <item name="saved_places" type="id">saved_places</item>
-    <item name="logout" type="id">logout</item>
+    <item name="pickup_location_title" type="id"/>
+    <item name="dropoff_location_title" type="id"/>
+    <item name="profile" type="id"/>
+    <item name="saved_places" type="id"/>
+    <item name="logout" type="id"/>
 </resources>
