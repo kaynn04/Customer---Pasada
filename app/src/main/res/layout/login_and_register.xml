@@ -2,10 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#8C1C13"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".WelcomeActivity">
 
     <!-- App Title -->
     <TextView
@@ -20,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="A booking application for the VMMC TODA"
+        android:text="@string/a_booking_application_for_the_vmmc_toda"
         android:textColor="@color/white"/>
 
     <!-- Log In Button -->
@@ -34,7 +36,8 @@
         android:text="Log In"
         android:textColor="@android:color/white"
         android:textSize="17sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
 
     <!-- Register Button -->
     <androidx.appcompat.widget.AppCompatButton
@@ -47,6 +50,7 @@
         android:text="Register"
         android:textColor="@android:color/black"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

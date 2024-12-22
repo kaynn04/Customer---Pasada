@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name">Pasada(Customer)</string>
-    <string name="enter_your_email_username">enter_your_email_username\n</string>
+    <string name="app_name">Pasada   (Customer)</string>
+    <string name="enter_your_email_username">Enter your Email/Username</string>
     <string name="register">Register</string>
     <string name="floor_unit_edit_hint">floor_unit_edit_hint\n</string>
     <string name="edit_icon">edit_icon\n</string>
+    <string name="a_booking_application_for_the_vmmc_toda">A booking application for the VMMC TODA</string>
+    <string name="it"><![CDATA[<]]></string>
+    <string name="re_type_your_password">Re-type your Password</string>
+    <string name="pasada">PASADA</string>
+    <string name="profile">Profile</string>
+    <string name="saved_places">Saved Places</string>
+    <string name="logout">logout</string>
+    <string name="metric">metric</string>
+    <string name="history">history</string>
+    <string name="settings">settings</string>
 </resources>

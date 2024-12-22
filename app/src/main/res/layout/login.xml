@@ -3,9 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
-    android:background="#F5F5F5"
-    android:fillViewport="true">
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".LoginActivity">
 
     <!-- Main Layout -->
     <LinearLayout
@@ -23,15 +25,14 @@
             <TextView
                 android:id="@+id/backButton"
                 android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="&lt;"
+                android:layout_height="match_parent"
+                android:text="@string/it"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:layout_gravity="center_vertical"
+                android:gravity="center"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="8dp"
-                android:layout_marginLeft="10dp"
                 android:textColor="@color/black"/>
         </LinearLayout>
 
@@ -62,7 +63,8 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Enter your email or username"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:textColor="@color/black"/>
 
         <!-- Password -->
         <TextView
@@ -81,31 +83,44 @@
             android:layout_height="48dp"
             android:inputType="textPassword"
             android:hint="Enter your password"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:textColor="@color/black"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sure about the information?"
-            android:layout_gravity="center_horizontal"
-            android:textAlignment="center"
-            android:layout_marginTop="155dp"
-            android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
-        <!-- Confirm Button -->
-        <Button
-            android:id="@+id/confirmButton"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/button_background"
-            android:text="Confirm"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp"
-            app:backgroundTint="@null" />  <!-- Ensuring no background tint is applied -->
+            <TextView
+                android:id="@+id/registerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not yet registered? Register here"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:autoLink="none" />
+
+            <!-- Confirm Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_background"
+                android:layout_below="@id/registerTextView"
+                android:text="Confirm"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                app:backgroundTint="@null"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+          <!-- Ensuring no background tint is applied -->
 
 
 

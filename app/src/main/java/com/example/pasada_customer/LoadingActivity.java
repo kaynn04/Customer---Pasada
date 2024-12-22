@@ -1,11 +1,12 @@
 package com.example.pasada_customer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ActivityMain extends AppCompatActivity {
+public class LoadingActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private Handler handler = new Handler();
@@ -39,6 +40,19 @@ public class ActivityMain extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
+
+                // After loading is complete, start the WelcomePage activity
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(LoadingActivity.this, WelcomeActivity.class);
+                        startActivity(intent);
+                        finish();  // Close the current activity (loading screen)
+
+                        // Apply smooth transition
+                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    }
+                });
             }
         }).start();
     }

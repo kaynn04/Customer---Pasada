@@ -1,12 +1,13 @@
 package com.example.pasada_customer;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hbb20.CountryCodePicker;
@@ -16,11 +17,22 @@ public class RegisterActivity extends AppCompatActivity {
     private CountryCodePicker countryCodePicker;
     private EditText phoneNumberEditText;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loading_main);
+        setContentView(R.layout.registration);
+
+        TextView backButton = findViewById(R.id.backButton);
+
+        // OnclickListener for the backButton
+        backButton.setOnClickListener(v -> {
+            // Navigate to the welcome page
+            Intent intent = new Intent(RegisterActivity.this, WelcomeActivity.class);
+            startActivity(intent);
+
+            // Apply smooth transition
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        });
 
         // Initialize views
         countryCodePicker = findViewById(R.id.country_code);

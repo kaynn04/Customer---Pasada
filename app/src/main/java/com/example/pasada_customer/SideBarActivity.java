@@ -2,8 +2,13 @@ package com.example.pasada_customer;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
@@ -11,74 +16,117 @@ public class SideBarActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private ImageButton burgerIcon;
+    private TextView userProfile, savedPlaces, metric, history, settings, logout ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home); // Make sure this points to your XML layout
-        setContentView((R.layout.user_profile));
-        setContentView((R.layout.saved_places));
-        setContentView((R.layout.metric));
-        setContentView((R.layout.history));
+        setContentView(R.layout.home); // Your layout XML file
 
-
-        // Initialize the DrawerLayout and NavigationView
+        // Initialize the drawer layout and navigation view
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
 
-        // Set up the burger menu button to open the drawer
-        findViewById(R.id.burger_icon).setOnClickListener(v -> {
-            drawerLayout.openDrawer(navigationView);  // Open the drawer when burger icon is clicked
+        // Initialize the ImageButton and set an OnClickListener to open the navigation drawer
+        burgerIcon = findViewById(R.id.burger_icon);
+        burgerIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open the drawer when the burger icon is clicked
+                drawerLayout.openDrawer(navigationView);
+            }
         });
 
-        // Handle clicks on sidebar menu items
-        handleMenuItemClicks();
-    }
+        // Initialize the menu items
+        RelativeLayout userProfile = findViewById(R.id.user_profile);
+        RelativeLayout savedPlaces = findViewById(R.id.saved_places);
+        RelativeLayout metric = findViewById(R.id.metric);
+        RelativeLayout history = findViewById(R.id.history);
+        RelativeLayout settings = findViewById(R.id.settings);
+        RelativeLayout logout = findViewById(R.id.logout);
 
-    private void handleMenuItemClicks() {
-        // Set up the menu item clicks
-        TextView userProfile = findViewById(R.id.user_profile);
-        TextView savedPlaces = findViewById(R.id.saved_places);
-        TextView metric = findViewById(R.id.metric);
-        TextView history = findViewById(R.id.history);
-        TextView settings = findViewById(R.id.settings);
-        TextView logout = findViewById(R.id.logout);
+        // Set OnClickListeners for the navigation items
+        userProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        // Example of what happens when you click each menu item:
-        userProfile.setOnClickListener(v -> {
-            // Navigate to Profile Activity or do something else
-            Intent intent = new Intent(SideBarActivity.this, UserProfileActivity.class);
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+                Intent intent = new Intent(SideBarActivity.this, UserProfileActivity.class);
+                startActivity(intent);
+            }
         });
 
-        savedPlaces.setOnClickListener(v -> {
-            // Navigate to Saved Places Activity
-            Intent intent = new Intent(SideBarActivity.this, SavedPlacesActivity.class);
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+        savedPlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SideBarActivity.this, SavedPlacesActivity.class);
+                startActivity(intent);
+            }
         });
 
-        metric.setOnClickListener(v -> {
-            // Navigate to Metric Activity
-            Intent intent = new Intent(SideBarActivity.this, MetricActivity.class);
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+        // Set OnClickListeners for the navigation items
+        metric.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SideBarActivity.this, MetricActivity.class);
+                startActivity(intent);
+            }
         });
 
-        history.setOnClickListener(v -> {
-            // Navigate to History Activity
-            Intent intent = new Intent(SideBarActivity.this, HistoryActivity.class);
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SideBarActivity.this, HistoryActivity.class);
+                startActivity(intent);
+            }
         });
 
-        settings.setOnClickListener(v -> {
-            // Navigate to Settings Activity
-            // Example: startActivity(new Intent(SideBar.this, SettingsActivity.class));
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle saved places click
+                // Navigate to saved places screen, for example
+            }
         });
 
-        logout.setOnClickListener(v -> {
-            // Handle logout functionality
-            // Example: logoutUser(); or perform any necessary logout logic
-            drawerLayout.closeDrawer(navigationView);  // Close the drawer after selection
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle logout click
+                // Perform logout actions here (e.g., clear session, navigate to login screen)
+                finish(); // Close the current activity
+            }
+        });
+        
+        // Hatid-Sundo Button
+        // Find the button by ID
+        LinearLayout hatidSundoButton = findViewById(R.id.hatid_sundo_layout);
+
+        // Set an OnClickListener for the button
+        hatidSundoButton.setOnClickListener(v -> {
+            // Navigate to the OnlineBookingsActivity
+            Intent intent = new Intent(SideBarActivity.this, HatidSundoFirstPage.class);
+            startActivity(intent);
+
+            // Apply smooth transition
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        });
+
+        // Padala Button
+        // Find the button by ID
+        LinearLayout padalaButton = findViewById(R.id.padala_layout);
+
+        // Set an OnClickListener for the button
+        padalaButton.setOnClickListener(v -> {
+            // Navigate to the OnlineBookingsActivity
+            Intent intent = new Intent(SideBarActivity.this, PadalaFirstPage.class);
+            startActivity(intent);
+
+            // Apply smooth transition
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         });
     }
 }

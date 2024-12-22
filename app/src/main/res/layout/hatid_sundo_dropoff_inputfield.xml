@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    tools:context=".HatidSundoDropoffInput">
 
     <!-- Red Square -->
     <RelativeLayout
@@ -116,7 +117,8 @@
             android:layout_marginStart="50dp"
             android:text="Current Location"
             android:textSize="13sp"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            android:textColor="#000000">
         </TextView>
 
         <TextView
@@ -126,7 +128,8 @@
             android:text="Tap here to turn on location"
             android:layout_below="@id/current_location_text"
             android:textSize="10sp"
-            android:textStyle="normal">
+            android:textStyle="normal"
+            android:textColor="#000000">
         </TextView>
 
         <FrameLayout
@@ -180,7 +183,8 @@
             android:text="Saved Addresses"
             android:textSize="13sp"
             android:layout_marginTop="6dp"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            android:textColor="#000000">
         </TextView>
 
         <FrameLayout
@@ -199,7 +203,19 @@
 
     </RelativeLayout>
 
-
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background"
+        android:text="Next"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>

@@ -229,13 +229,14 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="650dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_background_redbg"
         android:text="Confirm Booking"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
 
     <!--    Divider for Notes-->
     <View

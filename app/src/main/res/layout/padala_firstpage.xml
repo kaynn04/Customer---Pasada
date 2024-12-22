@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    tools:context=".PadalaFirstPage">
 
     <!-- Red Square -->
     <RelativeLayout
@@ -54,7 +55,7 @@
         android:textStyle="bold"
         android:layout_marginStart="65dp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/pickup_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,8 +64,7 @@
         android:background="@drawable/input_field_background"
         android:padding="12dp"
         android:layout_marginStart="65dp"
-        android:layout_marginEnd="60dp"
-        android:hint="Enter Pick-up Location"/>
+        android:layout_marginEnd="60dp"/>
 
     <TextView
         android:id="@id/dropoff_location_title"
@@ -78,7 +78,7 @@
         android:textStyle="bold"
         android:layout_marginStart="65dp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/dropoff_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,8 +87,7 @@
         android:background="@drawable/input_field_background"
         android:padding="12dp"
         android:layout_marginStart="65dp"
-        android:layout_marginEnd="60dp"
-        android:hint="Enter Drop-off Location"/>
+        android:layout_marginEnd="60dp"/>
 
     <!--    Divider Line   -->
 
@@ -242,14 +241,14 @@
         android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_below="@id/no_saved_places"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="132dp"
         android:layout_marginEnd="32dp"
         android:textSize="17sp"
         android:background="@drawable/button_background"
         android:text="Next"
         android:textColor="#8C1C13"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>

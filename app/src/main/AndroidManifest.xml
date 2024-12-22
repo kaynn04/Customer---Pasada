@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Pasada_customer"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityMain"
+            android:name=".SideBarActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +22,31 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="RegisterActivity"/>
-        <activity android:name=".SideBarActivity"/>
-        <activity android:name=".PickupConfirmationActivity"/>
+        <activity android:name=".LoadingActivity"/>
         <activity android:name=".UserProfileActivity"/>
         <activity android:name=".SavedPlacesActivity"/>
         <activity android:name=".MetricActivity"/>
+        <activity android:name=".WelcomeActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".HistoryActivity"/>
+        <activity android:name=".PadalaFirstPage"/>
+        <activity android:name=".HatidSundoFirstPage"/>
+        <activity android:name=".HatidSundoPickupInput"/>
+        <activity android:name=".HatidSundoDropoffInput"/>
+        <activity android:name=".PadalaPickupInput"/>
+        <activity android:name=".PadalaDropoffInput"/>
+        <activity android:name=".HatidSundoSecondPage"/>
+        <activity android:name=".PadalaSecondPage"/>
+        <activity android:name=".HatidSundoConfirmation"/>
+        <activity android:name=".PadalaConfirmation"/>
+        <activity android:name=".HatidSundoArriving"/>
+        <activity android:name=".PadalaArriving"/>
+        <activity android:name=".HatidSundoPickupConfirmation"/>
+        <activity android:name=".HatidSundoDropoffConfirmation"/>
+        <activity android:name=".PadalaPickupConfirmation"/>
+        <activity android:name=".PadalaDropoffConfirmation"/>
+
     </application>
 
 </manifest>

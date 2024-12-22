@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/how_many_passenger_background">
+
+    <TextView
+        android:id="@+id/passenger_selection_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Number of Passengers"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_one_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Passenger"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_two_passengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Passengers"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_three_passengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="3 Passengers"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_four_passengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4 Passengers"
+        android:background="@drawable/button_background"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
